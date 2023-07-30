@@ -16,6 +16,7 @@
     const nameLevelRegex = new RegExp(/ \(\d+\)$/);
 
     function showLevels(first) {
+        // Marketplace.tf removes a div when changing pages
         const selector = first ? "#items-list > div > table > tbody > tr > td" : "#items-list > table > tbody > tr > td"
         const rows = document.querySelectorAll(selector);
         rows.forEach(element => {
